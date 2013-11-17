@@ -20,8 +20,8 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
     
 2. ###Installation des paquets  
     
-    apt-get update && apt-get upgrade  
-    apt-get install deluge-common deluged deluge-web  
+        apt-get update && apt-get upgrade  
+        apt-get install deluge-common deluged deluge-web  
 
 3. ###Edition du fichier de configuration du Daemon  
 
