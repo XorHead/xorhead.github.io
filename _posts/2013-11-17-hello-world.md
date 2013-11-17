@@ -2,7 +2,7 @@
 layout: post
 title: "Installation Seedbox Deluge + ftps"
 description: "Installation d'une SeedBox avec Deluge et un serveur ftp avec ssl/tls"
-category: "torrent"
+category: ""
 tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 ---
 {% include JB/setup %}
