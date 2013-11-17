@@ -15,29 +15,29 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 
 ## Installation de Deluge  
 
-1. ### Création de l'utilisateur et des logs  
+  1. ### Création de l'utilisateur et des logs  
         
-    `adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge server" --group deluge  
+    adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge server" --group deluge  
     touch /var/log/deluged.log  
     touch /var/log/deluge-web.log  
-    chown deluge:deluge /var/log/deluge*`
+    chown deluge:deluge /var/log/deluge*
      
     
-2. ###Installation des paquets    
+  2. ###Installation des paquets    
     
-    `apt-get update && apt-get upgrade  
-    apt-get install deluge-common deluged deluge-web`
+    apt-get update && apt-get upgrade  
+    apt-get install deluge-common deluged deluge-web
 
-3. ###Edition du fichier de configuration du Daemon  
-        
-        `nano /etc/default/deluge-daemon`  
-        
-        DELUGED_USER="deluge"
-        RUN_AT_STARTUP="YES"
+    3. ###Edition du fichier de configuration du Daemon  
+
+`nano /etc/default/deluge-daemon`  
     
-        `nano /etc/init.d/deluge-daemon`
+    DELUGED_USER="deluge"  
+    RUN_AT_STARTUP="YES"  
+    
+`nano /etc/init.d/deluge-daemon`  
         
-            #!/bin/sh
+    #!/bin/sh
         
             ### BEGIN INIT INFO
         
