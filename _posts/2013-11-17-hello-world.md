@@ -13,8 +13,8 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 
 1. ### Création de l'utilisateur et des logs  
         
-    adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge server" --group deluge  
-    touch /var/log/deluged.log  
+    `adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge server" --group deluge  
+    touch /var/log/deluged.log`  
     touch /var/log/deluge-web.log  
     chown deluge:deluge /var/log/deluge*  
     
@@ -33,10 +33,10 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 `nano /etc/init.d/deluge-daemon`
 
 
-#### Add permissions:
+4. #### Add permissions:
     chmod 755 /etc/init.d/deluge-daemon  
     update-rc.d deluge-daemon defaults  
 
-4. ### Accès à l'interface  
+5. ### Accès à l'interface  
 http://xxx.xxx.xxx.xxx:8112 avec le mot de passe par défaut: **deluge**  
 
