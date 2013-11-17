@@ -2,14 +2,14 @@
 layout: post
 title: "Installation Seedbox Deluge + ftps"
 description: "Installation d'une SeedBox avec Deluge et un serveur ftp avec ssl/tls"
-category: ""
+category: "torrent"
 tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 ---
 {% include JB/setup %}
 
-# Installation de Deluge
+# Installation de Deluge  
 
-----------
+----------  
 
 1. ### Création de l'utilisateur et des logs  
         
@@ -17,7 +17,8 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
     touch /var/log/deluged.log  
     touch /var/log/deluge-web.log  
     chown deluge:deluge /var/log/deluge*  
-2. ###Installation des paquets
+    
+2. ###Installation des paquets  
     
     apt-get update && apt-get upgrade  
     apt-get install deluge-common deluged deluge-web  
