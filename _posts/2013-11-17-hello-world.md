@@ -7,7 +7,7 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 ---
 {% include JB/setup %}
 
-# Installation de Deluge Test
+# Installation de Deluge
 
 ### Création de l'utilisateur et des logs
 
