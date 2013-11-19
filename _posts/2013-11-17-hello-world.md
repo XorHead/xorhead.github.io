@@ -13,7 +13,7 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 
 1. ### Création de l'utilisateur et des logs  
 
-```bash
+```
 adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge server" --group deluge  
 touch /var/log/deluged.log  
 touch /var/log/deluge-web.log  
@@ -21,14 +21,14 @@ chown deluge:deluge /var/log/deluge*
 ```
 2. ###Installation des paquets
 
-```bash
+```
 apt-get update && apt-get upgrade  
 apt-get install deluge-common deluged deluge-web  
 ```
 3. ###Edition du fichier de configuration du Daemon  
 `nano /etc/default/deluge-daemon`  
 
-```bash
+```
 DELUGED_USER="deluge"  
 RUN_AT_STARTUP="YES"  
 ```
@@ -38,7 +38,7 @@ RUN_AT_STARTUP="YES"
 
 4. #### Add permissions:
 
-```bash
+```
 chmod 755 /etc/init.d/deluge-daemon  
 update-rc.d deluge-daemon defaults  
 ```
