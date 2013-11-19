@@ -9,15 +9,15 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
 
 # Installation de Deluge  
 
-----------
 
-### Création de l'utilisateur et des logs
-Afucking test:
     adduser --disabled-password --system --home /var/lib/deluge --gecos "Deluge server" --group deluge
     touch /var/log/deluged.log
     touch /var/log/deluge-web.log
-    $ chown deluge:deluge /var/log/deluge*
-C'est cool
+    chown deluge:deluge /var/log/deluge*
+
+----------
+
+### Création de l'utilisateur et des logs
 
 2. ###Installation des paquets
 
