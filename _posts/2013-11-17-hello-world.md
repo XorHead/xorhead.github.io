@@ -194,10 +194,11 @@ tags: [seedbox, xorhead, deluge, ssl,tls,ftp,ftps,torrent,ratio]
             exit 3 ;;
     esac
     # End of file
-    #### Add permissions:
     
-        chmod 755 /etc/init.d/deluge-daemon  
-        update-rc.d deluge-daemon defaults  
+#### Add permissions:
+    
+    chmod 755 /etc/init.d/deluge-daemon  
+    update-rc.d deluge-daemon defaults  
 
 ### Accès à l'interface  
 http://xxx.xxx.xxx.xxx:8112 avec le mot de passe par défaut: **deluge**  
