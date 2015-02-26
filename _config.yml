@@ -1,0 +1,10 @@
+name: Xorhead Notes
+url: http://127.0.0.1:4000/
+description: Les différentes notes de Xorhead durant ses surfs
+
+permalink: /:year/:month/:day/:title/
+paginate: 10
+pygments: true
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
